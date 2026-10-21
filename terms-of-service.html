@@ -1,36 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms of Service — QR Scanner</title>
-<style>
-  body { font-family: system-ui, sans-serif; max-width: 800px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #222; }
-  h1 { border-bottom: 2px solid #ddd; padding-bottom: .5rem; }
-  h2 { margin-top: 2rem; font-size: 1.2rem; }
-  a { color: #0366d6; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — QR Scanner & Barcode Generator</title>
+  <style>
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --accent-color: #2563eb;
+      --accent-bg: #eff6ff;
+      --border-color: #e2e8f0;
+      --badge-bg: #dbeafe;
+      --badge-text: #1e40af;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #0b0f19;
+        --card-bg: #111827;
+        --text-primary: #f8fafc;
+        --text-secondary: #94a3b8;
+        --accent-color: #60a5fa;
+        --accent-bg: #1e293b;
+        --border-color: #1f2937;
+        --badge-bg: #1e3a8a;
+        --badge-text: #bfdbfe;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-primary);
+      line-height: 1.65;
+      padding: 24px 16px 64px;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 36px 28px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    }
+
+    header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      font-size: 1.85rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+      border-left: 4px solid var(--accent-color);
+      padding-left: 12px;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-top: 18px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+    }
+
+    ul {
+      margin: 0 0 16px 22px;
+      color: var(--text-secondary);
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    li strong {
+      color: var(--text-primary);
+    }
+
+    .highlight-box {
+      background-color: var(--accent-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+      color: var(--text-primary);
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-color);
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 24px 18px;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-<h1>Terms of Service</h1>
-<p><strong>Last updated:</strong> October 14, 2026</p>
+  <main class="container">
+    <header>
+      <span class="badge">OFFICIAL TERMS OF SERVICE</span>
+      <h1>Terms of Service for QR Scanner &amp; Barcode Generator</h1>
+      <p class="meta">
+        <strong>Support Email:</strong> <a href="mailto:smappsstudios@gmail.com">smappsstudios@gmail.com</a>
+      </p>
+    </header>
 
-<h2>1. Acceptance</h2>
-<p>By using QR Scanner, you agree to these terms. If you do not agree, do not use the app.</p>
+    <div class="highlight-box">
+      <p>
+        <strong>Welcome to QR Scanner &amp; Barcode Generator!</strong> By downloading or using the app, you agree to these terms. If you do not agree with any part of these terms, please do not use the application.
+      </p>
+    </div>
 
-<h2>2. Use of Service</h2>
-<p>You may use QR Scanner for personal and commercial scanning of QR codes. You agree not to use the service for illegal or harmful purposes.</p>
+    <h2>1. Use of the Application</h2>
+    <p>
+      QR Scanner &amp; Barcode Generator provides a localized, on-device utility for scanning and generating QR codes and 1D barcodes. You agree to use the application strictly for lawful purposes. You may not use the app to:
+    </p>
+    <ul>
+      <li>Generate or distribute malicious payloads, phishing links, or unauthorized software.</li>
+      <li>Violate the intellectual property or privacy rights of third parties.</li>
+      <li>Reverse engineer, decompile, or attempt to extract the source code of the application.</li>
+    </ul>
 
-<h2>3. Intellectual Property</h2>
-<p>The app and its content are owned by the repository owner. You may not reverse-engineer or redistribute the core software without permission.</p>
+    <h2>2. Intellectual Property</h2>
+    <p>
+      All rights, title, and interest in and to the application, including its design, architecture, and code, are protected. The app utilizes open-source libraries (such as ZXing and CameraX) which remain subject to their respective open-source licenses.
+    </p>
 
-<h2>4. Disclaimer</h2>
-<p>QR Scanner is provided "as is" without warranties. We are not responsible for any damage or loss resulting from use.</p>
+    <h2>3. Accuracy of Decoded and Generated Data</h2>
+    <p>
+      While the application utilizes standard decoding algorithms (via Google ML Kit) and encoding standards (via ZXing), we do not guarantee that every scanned code will be accurate, error-free, or safe to execute.
+    </p>
+    <ul>
+      <li><strong>External Links:</strong> Scanning a QR code may prompt you to visit external websites or connect to Wi-Fi networks. You are solely responsible for verifying the safety and authenticity of any links, phone numbers, or network credentials before executing them.</li>
+      <li><strong>Barcode Generation:</strong> Generated barcodes are provided for convenience. We make no warranty that generated UPC or EAN barcodes will be scannable by third-party Point-of-Sale (POS) systems or universally accepted by retailers.</li>
+    </ul>
 
-<h2>5. Changes</h2>
-<p>Terms may be updated at any time. Continued use after changes implies acceptance.</p>
+    <h2>4. Third-Party Services &amp; Advertising</h2>
+    <p>
+      The application utilizes third-party services that declare their own Terms and Privacy Policies. Specifically:
+    </p>
+    <ul>
+      <li><strong>Google AdMob:</strong> The app relies on ad revenue to remain free. Google AdMob may serve banner and interstitial advertisements based on your device identifier and network data. We are not responsible for the content of the advertisements or the products/services promoted within them.</li>
+    </ul>
+    <p>
+      For more details on how these services process data, please refer to our <a href="./privacy-policy.html">Privacy Policy</a>.
+    </p>
 
-<h2>6. Governing Law</h2>
-<p>These terms are governed by the laws of India.</p>
+    <h2>5. Disclaimer of Warranties</h2>
+    <p>
+      THE APPLICATION IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, SECURE, OR COMPLETELY ERROR-FREE.
+    </p>
+
+    <h2>6. Limitation of Liability</h2>
+    <p>
+      TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL THE APPLICATION DEVELOPERS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, USE, OR GOODWILL, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OR INABILITY TO USE THE APP.
+    </p>
+
+    <h2>7. Governing Law</h2>
+    <p>
+      These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law provisions.
+    </p>
+
+    <h2>8. Changes to These Terms</h2>
+    <p>
+      We reserve the right, at our sole discretion, to modify or replace these Terms at any time. Material updates will be reflected on this page. By continuing to access or use the app after revisions take effect, you agree to be bound by the revised terms.
+    </p>
+
+    <h2>9. Contact Us</h2>
+    <p>
+      If you have any questions about these Terms, please contact us at:
+    </p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:smappsstudios@gmail.com">smappsstudios@gmail.com</a></li>
+    </ul>
+
+    <footer>
+      &copy; QR Scanner &amp; Barcode Generator. All rights reserved.
+    </footer>
+  </main>
 </body>
 </html>
